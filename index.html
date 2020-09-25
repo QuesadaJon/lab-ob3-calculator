@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
     <title>Document</title>
 </head>
-<body>
-<input class='input-one' id='user-input-one' type="text">
-<select name="function" id="function">
-    <option value="add">add</option>
-    <option value="subtract">subtract</option>
-</select>
-<input class='input-two' id='user-input-two' type="text">  
-<button>equals</button> 
+
+<body class='body'>
+    <div class='add-calc'>
+        <input class='add-input-one' id='add-input-one' type="text">
+        <h1>+</h1>
+        <input class='add-input-two' id='add-input-two' type="text">  
+        <button class='add-button' id='add-button'>equals</button> 
+        <h1 class="add-result" id='add-result'>=</h1>
+    </div>
+    <div class='subtract-calc'>
+        <input class='subtract-input-one' id='subtract-input-one' type="text">
+        <h1>-</h1>
+        <input class='subtract-input-two' id='subtract-input-two' type="text">  
+        <button class='subtract-button' id='subtract-button'>equals</button> 
+        <h1 class="subtract-result" id='subtract-result'>=</h1>
+    </div>
+    <div class='multiply-calc'>
+        <input class='multiply-input-one' id='multiply-input-one' type="text">
+        <h1>*</h1>
+        <input class='multiply-input-two' id='multiply-input-two' type="text">  
+        <button class='multiply-button' id='multiply-button'>equals</button> 
+        <h1 class="multiply-result" id='multiply-result'>=</h1>
+    </div>
 </body>
+<script type="module" src="app.js"></script>
+
 </html>
